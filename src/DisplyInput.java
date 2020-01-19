@@ -9,15 +9,15 @@ public class DisplyInput {
 		System.out.println("Please Enter anything.");// Start of user interaction
 		
 		System.out.println("What would you like to say: ");
-		Scanner userInput = new Scanner(System.in);
+		Scanner userInput = new Scanner(System.in); // gets the users input
 		
 		
 		try {
 			while (userInput.hasNext() == true) {
-				System.out.print(userInput.next() + " ");
+				System.out.print(userInput.next() + " "); // loops through the input and prints it
 			}	
 		} finally {
-			userInput.close();
+			userInput.close(); // close scanner
 
 		}
 	}
